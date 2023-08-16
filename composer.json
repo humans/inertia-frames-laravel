@@ -1,0 +1,27 @@
+{
+    "name": "humans/inertia-frames",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Humans\\InertiaFrames\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jaggy",
+            "email": "jaggy@humans.ph"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^10.19",
+        "inertiajs/inertia-laravel": "^0.6.9"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Humans\\InertiaFrames\\InertiaFramesServiceProvider"
+            ]
+        }
+    }
+}
