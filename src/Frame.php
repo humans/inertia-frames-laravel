@@ -15,7 +15,7 @@ class Frame implements Responsable
 
     public function toResponse($request)
     {
-        if ($request->wantsShard()) {
+        if ($request->hasHeader('X-Inertia-Frame')) {
             return response()->json([
                 'path'       => $this->path,
                 'properties' => $this->resolveProperties($request),

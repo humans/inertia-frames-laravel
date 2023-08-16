@@ -12,13 +12,8 @@ class InertiaFramesServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        Inertia::macro('shard', function (string $component, array $props = []) {
+        Inertia::macro('frame', function (string $component, array $props = []) {
             return new Frame($component, $props);
-        });
-
-        Request::macro('wantsShard', function () {
-            /** @var \Illuminate\Http\Request $this */
-            return $this->hasHeader('X-Inertia-Shard');
         });
     }
 }
