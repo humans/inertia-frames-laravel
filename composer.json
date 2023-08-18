@@ -1,5 +1,5 @@
 {
-    "name": "humans/inertia-frames",
+    "name": "humans/inertia-frames-laravel",
     "type": "library",
     "license": "MIT",
     "autoload": {
